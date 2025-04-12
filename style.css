@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* 
+#divPrincipal {
+    background-image: url(./imagenes/fondo.jpg);
+} */
+
+
+#divPrincipal {
+    height: 900px;
+}
