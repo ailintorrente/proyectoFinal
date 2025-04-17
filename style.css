@@ -1,14 +1,128 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-/* 
-#divPrincipal {
-    background-image: url(./imagenes/fondo.jpg);
-} */
-
-
-#divPrincipal {
-    height: 900px;
+/* BODY BACKGROUND IMAGES */
+#bodyMain{
+    background: url(./imagenes/fondo.jpg) fixed;
+    background-size: cover;
 }
+#bodyHistoria{
+    background: url(./imagenes/historia-programacion.jpg) fixed;
+    background-size: cover;
+}
+#bodyJuguemos{
+    background: url(./imagenes/img2.jpg);
+    background-size: cover;
+}
+/*FIN BODY BACKGROUNDS*/
+
+/* MENÚ DE NAVEGACION */
+nav{
+    position:fixed;
+    z-index: 1;
+    display:flex;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background-color: #FFFFFF00;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+#navegacion a{ 
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 1px 1px #808080 , 2px 3px #000;
+}
+#navegacion{
+    display: flex;
+    gap: 20px;
+}
+nav img{
+    width: 100px;
+}
+/* FIN MENÚ DE NAVEGACIÓN */
+
+
+#divPrincipal {
+    height: 1000px;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px #808080 , 5px 6px #000;
+    font: 400 65px "Raleway", sans-serif;
+}
+
+h2{
+    text-align: center;
+    font: 500 50px "Raleway", sans-serif;
+    color: #2F3645;
+    text-shadow: 1px 1px #FFF , 2px 3px #808080;
+    padding-bottom: 100px;
+}
+
+p{
+    font: 500 16px "Raleway", sans-serif;
+    text-wrap: wrap;
+    color: #2F3645;
+}
+
+#divContenido{
+    background-color: #FFF;
+    padding: 100px 0;
+}
+
+#divTarjetasContenido{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:100px;
+}
+.tarjetaContenido{
+    text-align: center;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+}
+
+.tarjetaContenido img{
+    width: 450px;
+    max-width: 100%;
+}
+
+.tarjetaContenido p{
+    max-width: 400px;
+}
+
+.tarjetaContenido button{
+    background-color: #2F3645;
+    border: none;
+    font: 16px "Raleway", sans-serif;
+    color: #FFF;
+    padding: 10px 110px;
+}
+
+
+/*
+.navFadeIn{
+    background-color:#FFFFFFFF;
+    transition: 0.3s ease-in-out;
+    color: #000;
+    text-shadow: 1px 1px #FFF , 2px 3px #000;
+}
+*/
