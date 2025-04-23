@@ -8,3 +8,14 @@ window.addEventListener("scroll", () => {
     navMenu.classList.remove("navFadIn");
   }
 });*/
+
+
+/*CONTROLES VIDEO PLAY PAUSE*/
+let videoHistoria = document.querySelector("#videoHistoria")
+
+function iniciarVideo(){
+  videoHistoria.play()
+}
+function pausarVideo(){
+  videoHistoria.pause()
+}

@@ -39,6 +39,11 @@ nav{
     font-size: 22px;
     text-shadow: 1px 1px #808080 , 2px 3px #000;
 }
+
+.navegacion a:hover{
+    transform: translate(3px,3px);
+    text-shadow: 1px 1px #808080;
+}
 .navegacion{
     display: flex;
     gap: 20px;
@@ -80,6 +85,12 @@ h2{
     color: #2F3645;
     text-shadow: 1px 1px #FFF , 2px 3px #808080;
     /*padding-bottom: 100px;*/
+}
+h4{
+    color: #FFF;
+    font: 700 14px "Raleway", sans-serif;
+    width: 200px;
+    text-align: center;
 }
 p{
     font: 500 16px "Raleway", sans-serif;
@@ -142,28 +153,21 @@ footer{
     padding: 0 100px;
     height: 250px;
 }
-
 footer p{
     color: #FFF;
 }
-
 .divFooter{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 20%;
 }
-
 footer img{
     width: 100px;
 }
+/*FIN FOOTER*/
 
-h4{
-    color: #FFF;
-    font: 700 14px "Raleway", sans-serif;
-    width: 200px;
-    text-align: center;
-}
+
 
 .seccionHistoria{
     background-color: #FFF;
@@ -171,6 +175,8 @@ h4{
     padding: 100px;
     display: flex;
     flex-direction: column;
+    gap: 100px;
+    align-items: center;
 }
 
 .cardsHistoria{
@@ -195,8 +201,36 @@ h4{
     gap: 50px;
 }
 
+/*VIDEO HISTORIA*/
+#videoHistoria{
+    width: 100%;
+}
 
+#barraReproduccionVideo{
+    background-color: #2F3645;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 5px;
+}
+#textDuracionVideo{
+    color: #FFF;
+}
+#divVideoHistoria{
+    background-color: #2F3645;
+    padding: 5px;
+}
+#divBotonesVideoHistoria{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.botonVideo{
+    padding:10px 40px;
+    box-shadow: 2px 2px grey;
+}
 
+/*FIN VIDEO HISTORIA*/
 
 /*
 .navFadeIn{
