@@ -42,7 +42,7 @@ nav{
 
 .navegacion a:hover{
     transform: translate(3px,3px);
-    text-shadow: 1px 1px #808080;
+    text-shadow: 0px 1px #000;
 }
 .navegacion{
     display: flex;
@@ -110,7 +110,7 @@ p{
 #divTarjetasContenido{
     display: flex;
     justify-content: space-around;
-    padding-bottom:100px;
+    padding: 100px 0 ;
 }
 .tarjetaContenido{
     text-align: center;
@@ -168,7 +168,7 @@ footer img{
 /*FIN FOOTER*/
 
 
-
+/*SECCION CARDS HISTORIA*/
 .seccionHistoria{
     background-color: #FFF;
     height: fit-content;
@@ -178,21 +178,18 @@ footer img{
     gap: 100px;
     align-items: center;
 }
-
 .cardsHistoria{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 20px;
 }
-
 .cardsHistoria img{
     width: 50%;
 }
-
 #card2{
     flex-direction: row-reverse;
 }
-
 .divTextoCard{
     display: flex;
     flex-direction: column;
@@ -200,12 +197,15 @@ footer img{
     justify-content: space-between;
     gap: 50px;
 }
+.divTextoCard p{
+    width: 90%;
+}
+/*FIN SECCION CARDS HISTORIA*/
 
 /*VIDEO HISTORIA*/
 #videoHistoria{
     width: 100%;
 }
-
 #barraReproduccionVideo{
     background-color: #2F3645;
     display: flex;
@@ -218,6 +218,7 @@ footer img{
 }
 #divVideoHistoria{
     background-color: #2F3645;
+    width: 75%;
     padding: 5px;
 }
 #divBotonesVideoHistoria{
@@ -226,10 +227,9 @@ footer img{
     gap: 20px;
 }
 .botonVideo{
-    padding:10px 40px;
+    padding:10px 30px;
     box-shadow: 2px 2px grey;
 }
-
 /*FIN VIDEO HISTORIA*/
 
 /*
