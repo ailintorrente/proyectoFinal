@@ -50,10 +50,20 @@
         </div>
     </section>
     <section class="seccionHistoria">
-        <video id="">
-            <source src="./video/historia-Comp.mp4" type="video/mp4">
-            <source src="./video/historia-Comp.ogv" type="video/ogv">
-        </video>            
+        <h2>Hablemos un poquito más...</h2>
+        <div id="divVideoHistoria">
+            <video id="videoHistoria" poster="imagenes/img-video.jpg">
+                <source src="./video/historia-Comp.mp4" type="video/mp4">
+                <source src="./video/historia-Comp.ogv" type="video/ogv">
+            </video>
+            <div id="barraReproduccionVideo">
+                <div id="divBotonesVideoHistoria">
+                    <button class="botonVideo" id="botonPlay" onclick="iniciarVideo()"><img src="./imagenes/play.svg" alt="Botón Play"></button>
+                    <button class="botonVideo" id="botonPause" onclick="pausarVideo()"><img src="./imagenes/pausa.svg" alt="Botón Pausa"></button>
+                </div>
+                <p id="textDuracionVideo">Duración video 4:41</p>
+            </div>
+        </div>            
     </section>
     <footer>
     <div class="divFooter">
@@ -62,5 +72,6 @@
     </div>
     <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
