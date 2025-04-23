@@ -70,14 +70,16 @@ h1{
     color: #FFF;
     text-align: center;
     text-shadow: 2px 2px #808080 , 5px 6px #000;
-    font: 400 65px "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    font-family: "Raleway", sans-serif;
 }
 h2{
     text-align: center;
     font: 500 50px "Raleway", sans-serif;
     color: #2F3645;
     text-shadow: 1px 1px #FFF , 2px 3px #808080;
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
 }
 p{
     font: 500 16px "Raleway", sans-serif;
@@ -85,6 +87,9 @@ p{
     color: #2F3645;
 }
 /*ESTILOS TEXTOS*/ 
+
+
+
 
 #divContenido{
     background-color: #FFF;
@@ -123,6 +128,10 @@ p{
     padding: 10px 110px;
 }
 
+.tarjetaContenido button:hover{
+    cursor: pointer;
+}
+
 
 /*FOOTER*/
 footer{
@@ -138,7 +147,7 @@ footer p{
     color: #FFF;
 }
 
-#divFooter{
+.divFooter{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,10 +160,43 @@ footer img{
 
 h4{
     color: #FFF;
-    font: 600 14px "Raleway", sans-serif;
+    font: 700 14px "Raleway", sans-serif;
     width: 200px;
     text-align: center;
 }
+
+.seccionHistoria{
+    background-color: #FFF;
+    height: fit-content;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsHistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsHistoria img{
+    width: 50%;
+}
+
+#card2{
+    flex-direction: row-reverse;
+}
+
+.divTextoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+
 
 /*
 .navFadeIn{
