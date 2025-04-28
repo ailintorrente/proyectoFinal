@@ -30,6 +30,7 @@ nav{
     justify-content: space-between;
     padding: 10px 50px;
     align-items: center;
+    transition: background-color 1s;
 }
 .navegacion a{ 
     text-decoration: none;
@@ -50,6 +51,20 @@ nav{
 }
 nav img{
     width: 100px;
+}
+
+/*CLASE PARA EL SCROLL*/
+.scroll {
+    background-color: #FFF;
+}
+
+.scroll a{
+    color: #2F3645;
+    text-shadow: 1px 1px #FFF, 2px 3px grey;
+}
+
+.scroll a:hover{
+    text-shadow: 1px 1px #2F3645;
 }
 /* FIN MENÚ DE NAVEGACIÓN */
 
@@ -168,8 +183,7 @@ footer img{
 /*FIN FOOTER*/
 
 
-/*SECCION CARDS HISTORIA*/
-.seccionHistoria{
+.seccionContenido{
     background-color: #FFF;
     height: fit-content;
     padding: 100px;
@@ -178,6 +192,8 @@ footer img{
     gap: 100px;
     align-items: center;
 }
+
+/*SECCION CARDS HISTORIA*/
 .cardsHistoria{
     display: flex;
     justify-content: space-around;
@@ -232,11 +248,11 @@ footer img{
 }
 /*FIN VIDEO HISTORIA*/
 
-/*
-.navFadeIn{
-    background-color:#FFFFFFFF;
-    transition: 0.3s ease-in-out;
-    color: #000;
-    text-shadow: 1px 1px #FFF , 2px 3px #000;
+
+
+/*JUGUEMOS*/
+
+#divJuego{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-*/

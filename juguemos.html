@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imagenes/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Juguemos</title>
 </head>
-<body id="bodyJuguemos">
+<body id="bodyJuguemos" onscroll="MenuScroll()">
     <nav>
-        <img src="./imagenes/logo.png" alt="">
+        <a href="./index.html">
+            <svg width="200" height="90">
+                <!-- PANTALLA -->
+                <rect x="50" y="5" width="80" height="50" fill="#767a81de" stroke="#2f3645" stroke-width="2"></rect>
+                <rect x="55" y="10" width="70" height="40" fill="black" stroke="#2f3645" stroke-width="2"></rect>
+                <rect x="80" y="55" width="20" height="10" fill="#767a81de"></rect>
+                <line x1="60" y1="20" x2="105" y2="20" stroke="green" stroke-width="3"></line>
+                <line x1="60" y1="25" x2="105" y2="25" stroke="green" stroke-width="3"></line>
+                <line x1="60" y1="30" x2="80" y2="30" stroke="green" stroke-width="3"></line>
+                <line x1="60" y1="35" x2="120" y2="35" stroke="green" stroke-width="3"></line>
+                <line x1="60" y1="40" x2="120" y2="40" stroke="green" stroke-width="3"></line>
+                <!-- TECLADO -->
+                <polygon points="55 70, 125 70, 135 85, 45 85" fill="#767a81de" stroke="#2f3645" stroke-width="2"></polygon>
+                <polygon points="60 72, 120 72, 130 83, 50 83" fill="black"></polygon>
+            </svg>
+        </a>
         <div class="navegacion">
             <a href="./historia.html">HISTORIA</a>
             <a href="./juguemos.html">JUGUEMOS</a>
@@ -21,7 +37,21 @@
         <h1>JUGUEMOS UN POCO</h1>
     </header>
     <section class="seccionContenido">
-        
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <div id="divJuego">
+            <img src="./imagenes/Rompe2.png" alt="">
+            <div class="divTarjetaSoltar" id="#divTarjetaSoltar1">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div class="divTarjetaSoltar" id="#divTarjetaSoltar2">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div class="divTarjetaSoltar" id="#divTarjetaSoltar3">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+            <img src="./imagenes/Rompe1.png" alt="">
+            <img src="./imagenes/Rompe3.png" alt="">
+        </div>
     </section>
     <script src="./script.js"></script>
 </body>
