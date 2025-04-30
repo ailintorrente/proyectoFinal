@@ -99,7 +99,6 @@ h2{
     font: 500 50px "Raleway", sans-serif;
     color: #2F3645;
     text-shadow: 1px 1px #FFF , 2px 3px #808080;
-    /*padding-bottom: 100px;*/
 }
 h4{
     color: #FFF;
@@ -124,7 +123,6 @@ p{
     background-color: #FFF;
     padding: 100px 0;
 }
-
 #divTarjetasContenido{
     display: flex;
     justify-content: space-around;
@@ -139,16 +137,13 @@ p{
     align-items: center;
     height: 450px;
 }
-
 .tarjetaContenido img{
     width: 450px;
     max-width: 100%;
 }
-
 .tarjetaContenido p{
     max-width: 400px;
 }
-
 .tarjetaContenido button{
     background-color: #2F3645;
     border: none;
@@ -156,7 +151,6 @@ p{
     color: #FFF;
     padding: 10px 110px;
 }
-
 .tarjetaContenido button:hover{
     cursor: pointer;
 }
@@ -251,13 +245,11 @@ footer img{
 
 
 /*JUGUEMOS*/
-
 #divJuego{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-
 .divTarjetaSoltar{
     background-color: #808080;
     border: 2px solid black;
@@ -266,18 +258,15 @@ footer img{
     justify-content: center;
     width: 280px;
 }
-
 .divTarjetaSoltar:hover{
     background-color: #090a0c;
 }
-
 #Rompe1{
     transform: rotate(-10deg);
 }
 #Rompe2{
     transform: rotate(10deg);
 }
-
 #Rompe3{
     grid-column: 3 / 4;
     transform: rotate(95deg);
@@ -285,23 +274,23 @@ footer img{
 
 
 /*ANIMACIÓN COMPUTADORA*/
-.parteGris{
-    animation: animationGris ease-in 2s;
+.parteGris, .parteNegra, .parteVerde{
+    animation: animationGris ease-in 3s;
 }
 .parteNegra{
-    animation: animationNegra ease-in 2s;
+    animation: animationNegra ease-in 3s;
 }
 .parteVerde{
-    animation: animationVerde ease-in 2s;
+    animation: animationVerde ease-in 3s;
 }
 @keyframes animationGris{
     0%{
-        transform: translate(0,-20px);
+        transform: translate(0,-10px);
         opacity: 0;
     }
     20%{
-        transform: translate(0,-10px);
-        opacity: 0;
+        transform: translate(0,0px);
+        opacity: 0.5;
     }
     40%{
         transform: translate(0,0);
@@ -316,22 +305,21 @@ footer img{
         opacity: 1;
     }
 }
-
 @keyframes animationNegra{
     0%{
-        transform: translate(0,-20px);
+        transform: translate(0,-10px);
         opacity: 0;
     }
     20%{
-        transform: translate(0,-20px);
+        transform: translate(0,-10px);
         opacity: 0;
     }
-    40%{
-        transform: translate(0,-10px);
+    45%{
+        transform: translate(0,0px);
         opacity: 1;
     }
     75%{
-        transform: translate(0,0);
+        transform: translate(0,0px);
         opacity: 1;
     }
     100%{
@@ -339,26 +327,20 @@ footer img{
         opacity: 1;
     }
 }
-
 @keyframes animationVerde{
     0%{
-        transform: translate(0,-20px);
         opacity: 0;
     }
     20%{
-        transform: translate(0,-20px);
         opacity: 0;
     }
     40%{
-        transform: translate(0,-10px);
-        opacity: 1;
+        opacity: 0;
     }
     75%{
-        transform: translate(0,0);
         opacity: 1;
     }
     100%{
-        transform: translate(0,0);
         opacity: 1;
     }
 }
