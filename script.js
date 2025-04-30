@@ -1,27 +1,3 @@
-/*const navMenu = document.querySelector("nav");
-
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  if (scrollPosition >= 110) { // Adjust the threshold as needed
-    navMenu.classList.add("navFadeIn"); // Apply a new class for a fade-in effect
-  } else {
-    navMenu.classList.remove("navFadIn");
-  }
-});*/
-
-
-/*CONTROLES VIDEO PLAY PAUSE*/
-let videoHistoria = document.querySelector("#videoHistoria")
-
-function iniciarVideo(){
-  videoHistoria.play()
-}
-function pausarVideo(){
-  videoHistoria.pause()
-}
-
-
-
 /*ON SCROLL*/
 const MenuScroll=()=>{
   if(window.scrollY > 50){
@@ -29,6 +5,8 @@ const MenuScroll=()=>{
   }else{
     document.querySelector("nav").classList.remove("scroll");
   }
+  if(window.scrollY >window.innerHeight*0.5){
+    document.querySelector("#tarjetaContenidoHistoria").style="animation: animationContenidoIzquierda 2s forwards ease-in-out; animation-delay: 1s";
+    document.querySelector("#tarjetaContenidoJuguemos").style="animation: animationContenidoDerecha 2s forwards ease-in-out;";
+  }
 }
-
-

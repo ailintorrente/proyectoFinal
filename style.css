@@ -136,6 +136,7 @@ p{
     justify-content: space-between;
     align-items: center;
     height: 450px;
+    visibility: hidden;
 }
 .tarjetaContenido img{
     width: 450px;
@@ -154,6 +155,34 @@ p{
 .tarjetaContenido button:hover{
     cursor: pointer;
 }
+
+@keyframes animationContenidoIzquierda{
+    from{
+        transform: translateX(-500px);
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+@keyframes animationContenidoDerecha{
+    from{
+        transform: translateX(500px);
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 
 
 /*FOOTER*/
@@ -196,6 +225,63 @@ footer img{
 }
 .cardsHistoria img{
     width: 50%;
+    visibility:hidden;
+}
+@keyframes animationHistoria_imgIzquierda {
+    from{
+        transform: translate(-600px, 100px) scale(1.1);
+        opacity: 0;
+        visibility:visible;
+    }
+
+    to{
+        transform: translate(0px);
+        opacity: 1;
+        visibility:visible;
+    }
+
+}
+@keyframes animationHistoria_imgDerecha {
+    from{
+        transform: translate(600px, 100px) scale(1.1);
+        opacity: 0;
+        visibility:visible;
+    }
+
+    to{
+        transform: translateZ(0px);
+        opacity: 1;
+        visibility:visible;
+    }
+
+}
+@keyframes animationHistoria_textoIzquierda {
+    from{
+        transform: perspective(500px) translateZ(-200px) translateX(-100px) skew(-30deg);
+        opacity: 0;
+        visibility:visible;
+    }
+
+    to{
+        transform: translateZ(0px);
+        opacity: 1;
+        visibility:visible;
+    }
+
+}
+@keyframes animationHistoria_textoDerecha {
+    from{
+        transform: perspective(500px) translateZ(-200px) translateX(100px) skew(30deg);
+        opacity: 0;
+        visibility:visible;
+    }
+
+    to{
+        transform: translateZ(0px);
+        opacity: 1;
+        visibility:visible;
+    }
+
 }
 #card2{
     flex-direction: row-reverse;
@@ -206,6 +292,7 @@ footer img{
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    visibility: hidden;
 }
 .divTextoCard p{
     width: 90%;
