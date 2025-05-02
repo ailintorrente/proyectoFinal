@@ -37,9 +37,9 @@
         <h1>JUGUEMOS UN POCO</h1>
     </header>
     <section class="seccionContenido">
-        <h2 class="espacio-titulo">Armemos el rompecabezas y veamos que imagen es...</h2>
-        <div id="divJuego">
-            <img src="./imagenes/Rompe2.png" class="imgArrastrables" id="Rompe2" alt="imagen del rompecabezas">
+        <h2 id="tituloJuego">Armemos el rompecabezas y veamos que imagen es...</h2>
+        <div id="divJuego" class="divJuego">
+            <img src="./imagenes/Rompe2.png" class="imgArrastrables" id="Rompe2" alt="imagen del rompecabezas" draggable="true">
             <div class="divTarjetaSoltar" id="divTarjetaSoltar1">
                 <p class="whiteParagraph">Arrastre y suelte la imagen aquí</p>
             </div>
@@ -49,11 +49,12 @@
             <div class="divTarjetaSoltar" id="divTarjetaSoltar3">
                 <p class="whiteParagraph">Arrastre y suelte la imagen aquí</p>
             </div>
-            <img src="./imagenes/Rompe1.png" class="imgArrastrables" id="Rompe1" alt="imagen del rompecabezas">
-            <img src="./imagenes/Rompe3.png" class="imgArrastrables" id="Rompe3" alt="imagen del rompecabezas">
+            <img src="./imagenes/Rompe1.png" class="imgArrastrables" id="Rompe1" alt="imagen del rompecabezas" draggable="true">
+            <img src="./imagenes/Rompe3.png" class="imgArrastrables" id="Rompe3" alt="imagen del rompecabezas" draggable="true">
         </div>
+        
+        <button id="btnReinicio" class="btnGris" style="visibility: hidden;">Reiniciar</button>
     </section>
-    <button id="btnReinicio">Reiniciar</button>
     <script src="./scriptJuguemos.js"></script>
 </body>
 </html>
