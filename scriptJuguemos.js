@@ -8,6 +8,7 @@ const BodyJuguemos=()=>{
 cantidad = 0
 h2=document.querySelector("#tituloJuego")
 zonaJuego=document.querySelector(".divJuego")
+objetoInvisible=document.querySelector("#objetoInvisible")
 // la verificacion la armo con un objeto que tiene el orden correcto
 const ordenCorrecto = {
   divTarjetaSoltar1: "Rompe1",

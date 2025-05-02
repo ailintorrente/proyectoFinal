@@ -333,8 +333,12 @@ footer img{
 
 /*JUGUEMOS*/
 .divJuego{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    gap: 50px;
+}
+#divZonasDrop{
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 .divTarjetaSoltar{
@@ -350,12 +354,13 @@ footer img{
 }
 #Rompe1{
     transform: rotate(-10deg);
+    align-self: flex-end;
 }
 #Rompe2{
     transform: rotate(10deg);
+    align-self: flex-start;
 }
 #Rompe3{
-    grid-column: 3 / 4;
     transform: rotate(95deg);
 }
 
