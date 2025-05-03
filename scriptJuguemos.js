@@ -8,7 +8,6 @@ const BodyJuguemos=()=>{
 cantidad = 0
 h2=document.querySelector(".tituloJuego")
 zonaJuego=document.querySelector(".divZonasDrop")
-objetoInvisible=document.querySelector("#objetoInvisible")
 // la verificacion la armo con un objeto que tiene el orden correcto
 const ordenCorrecto = {
   divTarjetaSoltar1: "Rompe1",
@@ -18,7 +17,6 @@ const ordenCorrecto = {
 function ComenzarJuego(){
   let imagenesArrastrables = document.querySelectorAll(".imgArrastrables");
   const zonasDrop = document.querySelectorAll(".divTarjetaSoltar");
-
   imagenesArrastrables.forEach((imagen) => {
     imagen.addEventListener("dragstart", (event) => {
       event.dataTransfer.setData("text/plain", event.target.id);
@@ -42,9 +40,7 @@ function ComenzarJuego(){
           btnReiniciar.style.visibility = "visible";
         }
       }
-      imagen.style.transform = "none";
-      imagen.style.width="100%";
-      imagen.style.height="100%";
+      imagen.classList.add("inPlace");
       zona.innerHTML = "";
       // Para que no se agregue una segunda imagen si ya hay una
       if (!zona.querySelector("img")) {
@@ -69,23 +65,20 @@ function ComenzarJuego(){
             }); 
           },100)
           setTimeout(()=>{
-            zonaJuego.style="transform: scale(0.7); transition-duration:2s; opacity:0; "
+            zonaJuego.style="transform: scale(0.7); transition-duration:3s; opacity:0; "
           },3000)
           setTimeout(()=>{
             h2.innerHTML="Felicidades!!!<br>Puzzle correctamente resuelto";
             h2.style="animation: animacionJuego 3s forwards; position:relative;"
-          },4000)
+          },5000)
         } else {
           setTimeout(()=>{
             zonasDrop.forEach((zona) => {
-              zona.style ="border:none; transform: scale(1.2); transition-duration:3s; gap:0;";
-              zonaJuego.style="gap:0"
+              zona.style ="border:none; transform: scale(1.2); transition-duration:3s;";
             });
           },100)
           setTimeout(()=>{
-            zonasDrop.forEach((zona) => {
-              zona.style ="transform: scale(1); transition-duration:2s; border:none; opacity:50%;";
-            });
+            zonaJuego.style="transform: scale(0.7); transition-duration:3s; opacity:50%; "
             h2.classList.add("h2Incorrecto");
             h2.innerHTML="Lo sentimos ,Puzzle no resuelto.<br>Prueba otra vez";
           },3000)
