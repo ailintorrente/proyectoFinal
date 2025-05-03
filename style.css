@@ -212,10 +212,12 @@ footer img{
     padding: 100px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
     align-items: center;
 }
 
+#seccionContenidoHistoria{
+    gap:100px;
+}
 /*SECCION CARDS HISTORIA*/
 .cardsHistoria{
     display: flex;
@@ -334,9 +336,9 @@ footer img{
 /*JUGUEMOS*/
 .divJuego{
     display: flex;
-    gap: 50px;
+    gap:50px;
 }
-#divZonasDrop{
+.divZonasDrop{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -363,6 +365,10 @@ footer img{
 #Rompe3{
     transform: rotate(95deg);
 }
+.tituloJuego{
+    padding:40px 10px;
+}
+
 
 
 /*ANIMACIÓN COMPUTADORA*/
@@ -439,10 +445,10 @@ footer img{
 
 @keyframes animacionJuego {
     50% {
-        transform: translateY(300px) translateZ(300px);
+        transform: translateY(350px) scale(1.2);
     }
     100% {
-        transform: translateY(300px) translateZ(0);
+        transform: translateY(350px);
     }
 }
 

@@ -6,8 +6,8 @@ const BodyJuguemos=()=>{
     }
 }
 cantidad = 0
-h2=document.querySelector("#tituloJuego")
-zonaJuego=document.querySelector(".divJuego")
+h2=document.querySelector(".tituloJuego")
+zonaJuego=document.querySelector(".divZonasDrop")
 objetoInvisible=document.querySelector("#objetoInvisible")
 // la verificacion la armo con un objeto que tiene el orden correcto
 const ordenCorrecto = {
@@ -50,7 +50,6 @@ function ComenzarJuego(){
       if (!zona.querySelector("img")) {
         zona.appendChild(imagen);
       }
-      console.log(cantidad);
       // Verificacion de cantidad de imagenes que se soltaron
       if (cantidad === 3) {
         let esCorrecto = true;
@@ -66,13 +65,12 @@ function ComenzarJuego(){
         if (esCorrecto) {
           setTimeout(()=>{
               zonasDrop.forEach((zona) => {
-              zona.style ="border:none; transform: scale(1.2); transition-duration:3s; gap:0;";
-              document.querySelector("#divJuego").style="gap:0";
+              zona.style ="border:none; transform: scale(1.2); transition-duration:3s;";
             }); 
           },100)
           setTimeout(()=>{
             zonasDrop.forEach((zona) => {
-              zona.style ="visibility:hidden; transform: scale(1); transition-duration:2s; border:none; opacity:0";
+              zona.style ="visibility:hidden; transform: scale(1); transition-duration:2s; border:none; opacity:0;";
             });
             h2.innerHTML="Felicidades!!!<br>Puzzle correctamente resuelto";
             h2.style="animation: animacionJuego 3s forwards; position:relative;"
