@@ -69,9 +69,9 @@ function ComenzarJuego(){
             }); 
           },100)
           setTimeout(()=>{
-            zonasDrop.forEach((zona) => {
-              zona.style ="visibility:hidden; transform: scale(1); transition-duration:2s; border:none; opacity:0;";
-            });
+            zonaJuego.style="transform: scale(0.7); transition-duration:2s; opacity:0; "
+          },3000)
+          setTimeout(()=>{
             h2.innerHTML="Felicidades!!!<br>Puzzle correctamente resuelto";
             h2.style="animation: animacionJuego 3s forwards; position:relative;"
           },4000)
